@@ -1,59 +1,44 @@
-# SpotifyApp
+# 🎵 Proyecto Angular - Práctica con API de Spotify
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.2.
+---
 
-## Development server
+## 📖 Descripción del Proyecto
 
-To start a local development server, run:
+Este proyecto es una práctica desarrollada para la materia **Aplicaciones Web**, con el objetivo de aplicar los conocimientos adquiridos en el uso del **framework Angular** y el **consumo de APIs REST**.  
 
-```bash
-ng serve
-```
+La aplicación se conecta a la **API de Spotify para Desarrolladores**, permitiendo obtener información de artistas, álbumes y canciones, además de practicar conceptos como componentes, servicios, enrutamiento y manejo de peticiones HTTP en Angular.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 👨‍💻 Desarrollado por
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+**Calvo Aguilar José Antonio**  
+**Matrícula:** 243699  
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ⚙️ Tecnologías utilizadas
 
-```bash
-ng generate --help
-```
+- **Angular** 17+  
+- **TypeScript**  
+- **HTML5 / CSS**  
+- **Spotify Web API**  
+- **Angular CLI**  
 
-## Building
+---
 
-To build the project run:
+## 🚀 Funcionalidades principales
 
-```bash
-ng build
-```
+- Autenticación mediante el servicio de Spotify.  
+- Búsqueda de artistas y canciones.  
+- Visualización de información de artistas, álbumes y temas.  
+- Integración con servicios y componentes personalizados.  
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 📘 Información adicional
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Materia:** Aplicaciones Web  
+**Docente:** *Mijangos Gordillo Jesús Rodrigo*  
+**Alumno:** *Calvo Aguilar José Antonio*  
+**Matrícula:** *243699* 
