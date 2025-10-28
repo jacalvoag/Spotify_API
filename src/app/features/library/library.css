@@ -1,0 +1,33 @@
+:host {
+    display: block;
+    }
+
+    .library-container {
+    padding: 24px;
+    color: #b3b3b3;
+    }
+
+    .library-container h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #ffffff;
+    }
+
+    .library-container p {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin-top: 0;
+    margin-bottom: 24px;
+    }
+
+    .content-placeholder {
+    border: 1px dashed #535353;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
