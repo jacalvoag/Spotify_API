@@ -1,0 +1,28 @@
+<nav class="sidebar-nav">
+    <div class="nav-section">
+    <a routerLink="/"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{exact: true}"
+        class="nav-item">
+        <span class="material-symbols-outlined">home</span>
+        <span>Inicio</span>
+    </a>
+    <a routerLink="/search"
+        routerLinkActive="active-link"
+        class="nav-item">
+        <span class="material-symbols-outlined">search</span>
+        <span>Buscar</span>
+    </a>
+    <a routerLink="/library"
+        routerLinkActive="active-link"
+        class="nav-item">
+        <span class="material-symbols-outlined">library_music</span>
+        <span>Tu Biblioteca</span>
+    </a>
+    </div>
+
+    <div class="nav-section grow">
+    <p class="section-title">Playlists</p>
+    <div class="placeholder-content">Lista de playlists...</div>
+    </div>
+</nav>
