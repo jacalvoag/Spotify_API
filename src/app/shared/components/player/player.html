@@ -2,33 +2,46 @@
 
     <div class="track-info">
     <img
-        src="https://placehold.co/40x40/111/ccc?text=Alb"
-        alt="Album Art Placeholder"
+        src="https://placehold.co/56x56/111/ccc?text=Alb" alt="Album Art Placeholder"
         class="track-cover"
     />
     <div class="track-details">
         <div class="track-name">Nombre Canción</div>
         <div class="track-artist">Artista</div>
     </div>
+    <span class="material-symbols-outlined control-btn icon-favorite">
+        favorite_border </span>
     </div>
 
     <div class="player-controls">
     <div class="control-buttons">
+        <span class="material-symbols-outlined control-btn icon-small">shuffle</span>
         <span class="material-symbols-outlined control-btn">skip_previous</span>
         <button class="play-button">
-        <span class="material-symbols-outlined">play_arrow</span>
+        <span class="material-symbols-outlined icon-play-pause">play_arrow</span>
         </button>
         <span class="material-symbols-outlined control-btn">skip_next</span>
+        <span class="material-symbols-outlined control-btn icon-small">repeat</span>
     </div>
     <div class="progress-section">
         <span class="time-current">0:00</span>
         <div class="progress-track">
-        <div class="progress-fill" style="width: 0%"></div>
-        </div>
-        <span class="time-total">0:00</span>
+        <div class="progress-fill" style="width: 30%"></div>
+        <div class="progress-handle" style="left: 30%"></div> </div>
+        <span class="time-total">3:45</span>
     </div>
     </div>
 
-    <div class="controls-placeholder"></div>
+    <div class="player-actions">
+    <span class="material-symbols-outlined control-btn icon-medium">lyrics</span>
+    <span class="material-symbols-outlined control-btn icon-medium">queue_music</span>
+    <span class="material-symbols-outlined control-btn icon-medium">devices</span>
+    <div class="volume-control">
+        <span class="material-symbols-outlined control-btn icon-medium">volume_up</span> <div class="progress-track volume-track">
+            <div class="progress-fill" style="width: 70%"></div>
+            <div class="progress-handle" style="left: 70%"></div>
+        </div>
+    </div>
+    </div>
 
 </div>

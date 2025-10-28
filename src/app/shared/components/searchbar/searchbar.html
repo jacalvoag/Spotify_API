@@ -1,0 +1,11 @@
+<div class="searchbar-wrapper">
+    <span class="material-symbols-outlined search-icon">search</span>
+    <input
+    type="search"
+    placeholder="¿Qué quieres buscar?"
+    class="search-input"
+    [(ngModel)]="searchQuery"
+    (keyup.enter)="handleSearch()"
+    aria-label="Barra de búsqueda"
+    />
+</div>

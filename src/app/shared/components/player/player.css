@@ -1,158 +1,194 @@
 :host {
     display: block;
     height: 100%;
+    width: 100%;
     }
 
     .player-content {
     height: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr; 
     align-items: center;
-    justify-content: space-between;
-    padding: 0 0.5rem;
-    gap: 1rem;
+    padding: 0 16px;
+    gap: 16px;
+    color: #b3b3b3;
     }
 
-    /* Track Info (Left) */
     .track-info {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    min-width: 150px; 
-    flex-shrink: 0;
+    gap: 12px;
+    min-width: 180px;
     justify-content: flex-start;
     }
 
     .track-cover {
-    width: 35px;
-    height: 35px;
-    border-radius: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
     object-fit: cover;
+    flex-shrink: 0;
     }
 
     .track-details {
     min-width: 0; 
     text-align: left;
+    overflow: hidden; 
     }
 
     .track-name {
-    color: #ccc;
-    font-size: 0.75rem;
-    font-weight: normal;
+    color: #ffffff; 
+    font-size: 0.875rem;
+    font-weight: 400;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 100px;
+    margin-bottom: 4px; 
     }
 
     .track-artist {
-    color: #888;
-    font-size: 0.65rem;
+    color: #b3b3b3;
+    font-size: 0.75rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 100px; 
+    }
+
+    .icon-favorite {
+    margin-left: 8px; 
+    font-size: 18px; 
     }
 
     .player-controls {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 8px;
     align-items: center;
-    flex-grow: 1; 
-    max-width: 450px;
+    max-width: 720px; 
+    width: 100%;
+    margin: 0 auto; 
     }
 
     .control-buttons {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 16px; 
     }
 
     .control-btn {
-    color: #aaa;
-    font-size: 20px;
-    width: 20px;
-    height: 20px;
+    color: #b3b3b3;
+    font-size: 20px; 
     cursor: pointer;
+    transition: color 0.1s;
     user-select: none;
     }
 
     .control-btn:hover {
-    color: #ddd;
+    color: #ffffff;
+    }
+
+    .icon-small {
+    font-size: 18px;
+    }
+    .icon-medium {
+    font-size: 20px;
     }
 
     .play-button {
-    background-color: #ccc;
-    border: 1px solid #555;
+    background-color: #ffffff;
+    border: none;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     padding: 0;
+    transition: transform 0.1s;
     }
 
     .play-button:hover {
-    background-color: #ddd;
+    transform: scale(1.05);
     }
 
     .play-button .material-symbols-outlined {
-    color: #222;
-    font-size: 18px;
-    width: 18px;
-    height: 18px;
-    display: flex;
+    color: #000000;
+    font-size: 24px; 
+    display: flex; 
     align-items: center;
     justify-content: center;
+    font-variation-settings: 'FILL' 1;
     }
 
     .progress-section {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 8px; 
     width: 100%;
     }
 
     .time-current,
     .time-total {
-    color: #888;
-    font-size: 0.65rem;
-    min-width: 30px;
+    color: #a7a7a7;
+    font-size: 0.7rem;
+    min-width: 40px; 
     text-align: center;
+    user-select: none;
     }
 
     .progress-track {
-    flex: 1;
-    height: 2px;
-    background-color: #444;
-    border-radius: 0;
+    flex-grow: 1;
+    height: 4px;
+    background-color: #4d4d4d;
+    border-radius: 2px;
     position: relative;
     cursor: pointer;
+    }
+    .progress-track:hover .progress-fill {
+    background-color: #1db954;
+    }
+    .progress-track:hover .progress-handle {
+    opacity: 1; 
     }
 
     .progress-fill {
     height: 100%;
-    background-color: #888;
-    border-radius: 0;
-    transition: width 0.1s linear;
+    background-color: #b3b3b3;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
     }
 
-    .progress-track:hover .progress-fill {
-    background-color: #aaa;
+    .progress-handle {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.1s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-    .controls-placeholder {
-    min-width: 150px;
-    flex-shrink: 0; 
-    }
-
-    .no-track {
+    .player-actions {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 0.8rem;
-    color: #888;
+    justify-content: flex-end;
+    gap: 12px;
+    min-width: 180px;
+    }
+
+    .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 130px;
+    }
+
+    .volume-track {
+    width: 90px;
 }

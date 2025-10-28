@@ -1,0 +1,19 @@
+.search-container {
+    padding: 1rem;
+    color: #ccc;
+    }
+
+    .search-container h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ddd;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+    }
+
+    .search-container p {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 0;
+}
